@@ -20,7 +20,7 @@ fn main() {
 
     let evaluator_2 = CompositeEvaluator::from_file_paths_optimized(
         "neural-nets/contact.onnx",
-        "training-data/race080.onnx",
+        "training-data/race120.onnx",
     )
     .unwrap_or_exit_with_message();
     // let evaluator_2 = engine::multiply::MultiPlyEvaluator {

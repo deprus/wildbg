@@ -19,7 +19,7 @@ static GLOBAL: MiMalloc = MiMalloc;
 fn main() -> std::io::Result<()> {
     // Change the next couple of lines to configure what, how and how much you want to roll out.
     let phase = OngoingPhase::Race;
-    let amount = 1_000;
+    let amount = 200_000;
     let finder_evaluator = CompositeEvaluator::try_default().unwrap_or_exit_with_message();
     find_and_roll_out(finder_evaluator, amount, phase)?;
     Ok(())
