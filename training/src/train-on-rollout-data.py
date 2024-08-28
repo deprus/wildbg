@@ -74,7 +74,7 @@ if __name__ == "__main__":
     Path(path).mkdir(exist_ok=True)
 
 # python ./src/train-on-rollout-data.py
-    mode = "race"
+    mode = "contact"
     match mode:
         case "contact":
             num_inputs = 202
