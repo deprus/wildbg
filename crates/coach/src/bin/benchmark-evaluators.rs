@@ -36,7 +36,7 @@ fn main() {
         print!("\rTry {}", path_string);
         stdout().flush().unwrap();
         let contender =
-            CompositeEvaluator::from_file_paths_optimized(&path_string, "neural-nets/contact.onnx")
+            CompositeEvaluator::from_file_paths_optimized(&path_string, "neural-nets/race.onnx")
                 .unwrap_or_exit_with_message();
 
         let duel = Duel::new(contender, current);
